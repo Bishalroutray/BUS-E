@@ -1,0 +1,26 @@
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.0'
+    }
+}
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.buse'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.example.buse"
+        minSdk 21
+        targetSdk 34
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'com.google.firebase:firebase-auth:22.3.0'
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+}
